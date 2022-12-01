@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { PageServerData } from './$types'
+  import type { PageData } from './$types'
   import Card from '$lib/ui/card.svelte'
 
-  export let data: PageServerData
+  export let data: PageData
 </script>
 
 <main class="grid">
