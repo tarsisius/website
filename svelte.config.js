@@ -2,15 +2,14 @@ import adapter from '@sveltejs/adapter-static'
 import preprocess from 'svelte-preprocess'
 
 const config = {
-  preprocess: preprocess({
-    pages: 'build',
-    assets: 'build',
-    fallback: '404.html',
-    precompress: true,
-  }),
-
+  preprocess: preprocess(),
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: '404.html',
+      precompress: true,
+    }),
   },
 }
 
