@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '../new.css'
+  import '../app.css'
 </script>
 
 <svelte:head>
