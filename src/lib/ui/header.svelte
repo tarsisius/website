@@ -1,17 +1,9 @@
-<script lang="ts">
-  export let title: string
-</script>
-
-<svelte:head>
-  <title>{title}</title>
-</svelte:head>
-<header>
-  <div class="header_inner">
-    <div class="header_logo">
+<header class="bg-gray-100">
+  <div class="flex flex-col max-w-2xl mx-auto py-4">
+    <div class="flex relative">
       <a href="/">
-        <img src="/logo.svg" alt="logo" />
+        <img class="h-10" src="/logo.svg" alt="logo" />
       </a>
     </div>
-    <p class="header_title">{title}</p>
   </div>
 </header>

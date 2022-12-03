@@ -1,5 +1,8 @@
 <script lang="ts">
-  import '../app.css'
+  // import '../app.css'
+  import 'virtual:windi.css'
+
+  import Header from '$lib/ui/header.svelte'
 </script>
 
 <svelte:head>
@@ -10,4 +13,5 @@
     rel="stylesheet"
   />
 </svelte:head>
+<Header />
 <slot />
